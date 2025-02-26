@@ -3,3 +3,4 @@ checkpoints/
 log/
 config/
 */__pycache__/
+!config/template.yaml

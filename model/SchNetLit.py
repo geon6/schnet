@@ -16,7 +16,7 @@ from torchmetrics import (
 class SchNetLit(pl.LightningModule):
     def __init__(self):
         super().__init__()
-        self.model = SchNet()
+        self.model = SchNet(**conf.schnet)
         self.criterion = nn.MSELoss()
         self.mae = MeanAbsoluteError()
         self.mse = MeanSquaredError()
